@@ -19,19 +19,6 @@ print("箱子尺寸:", length, "x", width, "x", height, "cm")
 print("用料面积:", surface_area, "平方厘米")
 print("约", round(surface_area / 10000, 3), "平方米")
 
-l=50
-w=40
-h=30
-surface_area2 = 2 *(l* w + l * h  + w * h)
-print("箱子尺寸:", l, "x", w, "x", h, "cm")
-print("用料面积:", surface_area2, "平方厘米")
-print("约", round(surface_area2 / 10000, 3), "平方米")  
-if surface_area < surface_area2:
-    print("箱子 A 更省料")
-else:
-    print("箱子 B 更省料")
-
-
 boxes = {"a":[40.0, 30.0, 25.0], "b":[50.0, 40.0, 30.0],"c":[60,40,30],"d":[32,54,25]}
 for box in boxes:
     print(box,type(box))
