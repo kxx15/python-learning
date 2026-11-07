@@ -31,10 +31,11 @@ if surface_area < surface_area2:
 else:
     print("箱子 B 更省料")
 
-boxes = [[40.0, 30.0, 25.0], [50.0, 40.0, 30.0],[60,40,30],[32,54,25]]
+
+boxes = {"a":[40.0, 30.0, 25.0], "b":[50.0, 40.0, 30.0],"c":[60,40,30],"d":[32,54,25]}
 for box in boxes:
-    print(box)
-    l,w,h = box
+    print(box,type(box))
+    l,w,h =boxes[box]
     surface_area2 = 2 *(l* w + l * h  + w * h)
     print("箱子尺寸:", l, "x", w, "x", h, "cm")
     print("用料面积:", surface_area2, "平方厘米")
